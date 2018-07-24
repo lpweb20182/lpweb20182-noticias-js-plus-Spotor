@@ -20,10 +20,18 @@ function atualizarLista(noticia) {
 
 function salvar(form) {
     var titulo = document.getElementById('frm-titulo').value;
+    var autor = document.getElementById('frm-autor').value;
+    var email = document.getElementById('frm-email').value;
+    var data = document.getElementById('frm-data').value;
+    var hora = document.getElementById('frm-hora').value;
     var conteudo = document.getElementById('frm-conteudo').value;
     var noticia = {
         id: noticias.length,
         titulo: titulo,
+        autor: autor,
+        email: email,
+        data: data,
+        hora: hora,
         conteudo: conteudo
     };
     noticias.push(noticia);
